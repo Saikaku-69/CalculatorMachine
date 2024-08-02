@@ -171,13 +171,27 @@ struct calculatorView: View {
                 }
             }
         }
-        //
+        //0
+        Button(action: {
+            appendNumber("0")
+        }) {
+            ZStack {
+                Rectangle()
+                    .fill(.gray)
+                    .frame(width: 100, height: 50)
+                    .cornerRadius(15)
+                    .opacity(0.5)
+                Text("0")
+                    .foregroundColor(.black)
+                    .font(.title)
+            }
+        }
     }
-    private func appendNumber(_ digit: String) {
+    private func appendNumber(_ numbers: String) {
             if number == "0" {
-                number = digit
+                number = numbers
             } else {
-                number += digit
+                number += numbers
             }
         }
 }
