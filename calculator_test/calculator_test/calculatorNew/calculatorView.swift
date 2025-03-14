@@ -178,7 +178,7 @@ struct calculatorView: View {
             ZStack {
                 Rectangle()
                     .fill(.gray)
-                    .frame(width: 100, height: 50)
+                    .frame(width: 320, height: 50)
                     .cornerRadius(15)
                     .opacity(0.5)
                 Text("0")
